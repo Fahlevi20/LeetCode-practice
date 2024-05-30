@@ -1,6 +1,7 @@
 # My LeetCode Practice
 ## Programming Languages learning: Python, SQL
 ## See the progress:
+### [My LeetCode Profile](https://leetcode.com/u/leleenjiner/)
 Problems:
 - [TwoSum](https://leetcode.com/problems/two-sum/)
 - [Valid Anagram](https://leetcode.com/problems/valid-anagram/)
