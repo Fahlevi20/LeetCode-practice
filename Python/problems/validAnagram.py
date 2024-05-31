@@ -9,8 +9,4 @@ class Solution:
             sumS[s[i]] = 1+sumS.get(s[i],0)
         for i in range(len(t)):
             sumT[t[i]] = 1+ sumT.get(t[i],0)
-
-        for check in sumS:
-            if sumS[check] != sumT.get(check,0):
-                return False
-        return True   
+        return sumS == sumT
