@@ -9,6 +9,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+      with:
+        path: Python/problems
+       
     - name: Set up Python
       uses: actions/setup-python@v3
       with:
@@ -19,4 +22,12 @@ jobs:
         pip install pytest
     - name: Test with unittest
       run: |
-        python -m unittest discover -v
+        for dir in Python/problems/*; do
+          if [ -d "$dir" ]; then
+            cd "$dir"
+            if [ -f "test_solution.py" ]; then
+              python -m unittest discover -v
+            fi
+            cd ../..
+          fi
+        done
