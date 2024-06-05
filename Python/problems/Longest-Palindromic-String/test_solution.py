@@ -1,5 +1,5 @@
 import unittest
-from solution import solution
+from solution import Solution
 class TestSolution(unittest.TestCase):
   def longest_palindromic_string(self):
     sol = solution()
